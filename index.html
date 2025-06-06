@@ -2,53 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Global - Expert Computer Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Global - Computer & Tech Support</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #f2f2f2;
-  
- 
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .site-name {
+      text-align: center;
+      flex-grow: 1;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .pay-btn {
+      background-color: #ffcc00;
+      color: #003366;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
     .hero {
       background-color: #00509e;
       color: white;
-      padding: 100px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .section {
       padding: 40px 20px;
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 250px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    section.info-section {
-      padding: 40px 20px;
-      background-color: #e9f0f7;
-    }
-    section.info-section h2 {
-      color: #003366;
-      text-align: center;
-    }
-    section.info-section p,
-    section.info-section ul {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      font-size: 1.05em;
-      line-height: 1.7;
     }
-    section.info-section ul {
+    .section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    .section ul {
+      list-style-type: disc;
       padding-left: 20px;
     }
     footer {
@@ -57,96 +59,63 @@
       text-align: center;
       padding: 20px;
     }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .site-name {
+        font-size: 18px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
   </style>
-  header {
-  background-color: #003366;
-  color: white;
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-header a {
-  text-decoration: none;
-}
-header .pay-btn {
-  background-color: #ffcc00;
-  color: #003366;
-  padding: 10px 12px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 </head>
 <body>
 
   <header>
-    <h1>Web Global</h1>
-    <p>Computer Repair & Network Security Experts</p>
+    <div></div> <!-- Empty left space -->
+    <div class="site-name">Web Global</div>
+    <a class="pay-btn" href="https://your-payment-link.com" target="_blank">Pay Now</a>
   </header>
 
   <section class="hero">
-    <h2>Reliable Computer Support</h2>
-    <p>Fast solutions for your PC, network, and security needs</p>
+    <h1>Expert Computer & Technical Support</h1>
+    <p>Fast, reliable help for all your tech needs</p>
   </section>
 
-  <section class="services">
-    <div class="card">
-      <h3>PC Repair</h3>
-      <p>Expert diagnostics and repair for desktops & laptops.</p>
-    </div>
-    <div class="card">
-      <h3>Virus Removal</h3>
-      <p>Remove malware, protect files, and boost performance.</p>
-    </div>
-    <div class="card">
-      <h3>Network Security</h3>
-      <p>Secure your home or office network from threats.</p>
-    </div>
-    <div class="card">
-      <h3>OS Installation</h3>
-      <p>Install or format Windows & Linux systems easily.</p>
-    </div>
-  </section>
-
-  <!-- ✅ Computer Support Section -->
-  <section class="info-section">
-    <h2>🖥️ Computer Support Services</h2>
-    <p>
-      At <strong>Web Global</strong>, we offer dependable computer support for all types of users — whether you're working from home, managing a business, or using a personal device. Our goal is to keep your systems running smoothly and securely.
-    </p>
+  <section class="section">
+    <h2>🖥️ Computer Support</h2>
+    <p>We offer professional computer support for home users, students, and businesses. Our services include:</p>
     <ul>
-      <li>✅ Troubleshooting for software & hardware issues</li>
-      <li>✅ System clean-up & optimization</li>
-      <li>✅ Operating system installation & recovery</li>
-      <li>✅ Printer and peripheral setup</li>
-      <li>✅ Home and office network setup & security</li>
+      <li>System diagnostics and repair</li>
+      <li>Hardware troubleshooting and upgrades</li>
+      <li>OS installation and recovery (Windows, Linux)</li>
+      <li>Data backup and file recovery</li>
+      <li>Performance optimization</li>
     </ul>
   </section>
 
-  <!-- ✅ Tech Support Section -->
-  <section class="info-section">
-    <h2>💡 Technical Support You Can Trust</h2>
-    <p>
-      Our technical support team is ready to assist you with remote and on-site help. We provide personalized guidance and step-by-step resolutions for all kinds of tech problems. No matter your experience level, we make tech easy for you.
-    </p>
+  <section class="section">
+    <h2>💡 Technical Support</h2>
+    <p>Need help with software or networking? Our technical support team is ready to help with:</p>
     <ul>
-      <li>✅ Remote support via phone or internet</li>
-      <li>✅ Email and software configuration</li>
-      <li>✅ Network troubleshooting and repair</li>
-      <li>✅ Cybersecurity assessments and advice</li>
-      <li>✅ Support for Windows, Linux, and third-party apps</li>
+      <li>Remote or on-site assistance</li>
+      <li>Router & Wi-Fi setup</li>
+      <li>Software installation & email setup</li>
+      <li>Cybersecurity & antivirus solutions</li>
+      <li>Printer and peripheral support</li>
     </ul>
   </section>
 
   <footer>
-   <footer>
-  Web Global © 2025<br />
-  Call: <a href="tel:+NIL" style="color: white;">+1 NIL</a> |
-  Email: <a href="mailto:NIL" style="color: white;">NIL</a>
-
+    📞 <a href="tel:+NIL">+1NIL</a> |
+    ✉️ <a href="mailto:NIL.com">NIL.com</a><br />
+    &copy; 2025 Web Global. All rights reserved.
   </footer>
 
 </body>
