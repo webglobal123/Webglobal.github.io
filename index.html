@@ -11,10 +11,18 @@
       background-color: #f2f2f2;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 20px;
-      text-align: center;
+     <header>
+  <div>
+    <h1 style="margin: 0;">Web Global</h1>
+    <p style="margin: 5px 0;">Computer Repair & Network Security Experts</p>
+  </div>
+  <div>
+    <a href="tel:+15551234567" style="color: white; margin-right: 15px;">📞 +1 (555) 123-4567</a>
+    <a href="mailto:support@webglobal.com" style="color: white; margin-right: 15px;">✉️ support@webglobal.com</a>
+    <a href="https://your-payment-link.com" target="_blank" class="pay-btn">💳 Pay Now</a>
+  </div>
+</header>
+
     }
     .hero {
       background-color: #00509e;
@@ -62,6 +70,27 @@
       padding: 20px;
     }
   </style>
+  header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header a {
+  text-decoration: none;
+}
+header .pay-btn {
+  background-color: #ffcc00;
+  color: #003366;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 </head>
 <body>
 
@@ -125,7 +154,12 @@
   </section>
 
   <footer>
-    Call: +1 (555) 123-4567 | Email: support@webglobal.com
+   <footer>
+  Web Global © 2025<br />
+  Call: <a href="tel:+NIL" style="color: white;">+1 (555) 123-4567</a> |
+  Email: <a href="mailto:NIL" style="color: white;">support@webglobal.com</a>
+</footer>
+
   </footer>
 
 </body>
